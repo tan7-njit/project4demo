@@ -1,0 +1,200 @@
+body{
+  font-family: roboto sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1562813733-b31f71025d54?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80); background-size: cover;">
+
+}
+.navbar-brand{
+  letter-spacing: .2rem;
+}
+.bg-nav{
+  background-color: #017389;
+}
+a.nav-link{
+  margin-left: 30px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: ;
+  font-size: 12px;
+}
+.items{
+  margin-left: 50px;
+}
+.navbar-toggler{
+  margin-left: 300px;
+}
+.jumbotron{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  letter-spacing: .2rem;
+  color: white;
+
+}
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    animation: flicker 1.5s infinite alternate;
+}
+.card{
+  float: left;
+  margin: 30px;
+  opacity: 0.1;
+  background-color: #02687e;
+  height: 350px;
+}
+.card:hover{
+  opacity: 0.5;
+  border: 2px solid green;
+  background-color: black;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+
+}
+.card img{
+  height:150px;
+  width: 150px;
+  margin: auto;
+}
+.services{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  letter-spacing: .2rem
+}
+.about{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+
+}
+.about img{
+  height: 600px ;
+  width: px;
+  margin-left: 70px;
+  margin-top: 120px;
+  border-radius: 25px;
+  border: 1px white solid;
+  vertical-align: middle;
+}
+
+.about-title{
+
+}
+.first-h2{
+  margin-left: 50px;
+  letter-spacing: .2rem;
+  color: white;
+}
+.second-h2{
+  margin-left: 150px;
+  letter-spacing: .2rem;
+  color: white;
+}
+.third-h2{
+  margin-left: 320px;
+  letter-spacing: .2rem;
+  color: white;
+}
+.cvbtn{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: .2rem;
+}
+.btn-success{
+  background-color:#020c0d;
+  letter-spacing: .2rem;
+}
+.btn-success:hover{
+  letter-spacing: .2rem;
+  background-color: white;
+  color:black;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    animation: flicker 1.5s infinite alternate;
+}
+.article{
+  padding: 20px;
+  letter-spacing: .2rem;
+  color: white;
+  font-size: 16px;
+  width: 700px;
+  background-color: black;
+  opacity: 0.8;
+}
+.certificates{
+  padding: 40px;
+  border: ;
+  color: white;
+}
+.certificates img{
+  height: 700px;
+  width: 400px;
+}
+.contact-form{
+  padding: 60px;
+  border: 1px white solid;
+  margin-top: 80px;
+  width: 800px;
+  color:white;
+  letter-spacing: .2rem;
+}
+input.form-control{
+  border: 2px blue solid;
+  box-shadow: 2px 2px 2px red;
+}
+textarea{
+  border: 1px blue solid;
+  box-shadow:  2px 2px 2px red;
+}
+
+@media only screen and (max-width: 550px) {
+  .card{
+    margin-left: 80px;
+  }
+
+}
+@keyframes flicker {
+
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+
+  }
+
+  20%, 24%, 55% {
+      text-shadow: none;
+  }
+}
