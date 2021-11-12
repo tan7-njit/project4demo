@@ -1,7 +1,6 @@
 body{
   font-family: roboto sans-serif;
   background-image: url(https://images.unsplash.com/photo-1562813733-b31f71025d54?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80); background-size: cover;">
-
 }
 .navbar-brand{
   letter-spacing: .2rem;
@@ -45,7 +44,7 @@ a.nav-link{
   margin: 30px;
   opacity: 0.1;
   background-color: #02687e;
-  height: 350px;
+  height: 370px;
 }
 .card:hover{
   opacity: 0.7;
@@ -86,7 +85,7 @@ a.nav-link{
 }
 .about img{
   float:right;
-  height: 600px ;
+  height: 600px;
   width: px;
   margin-left: 70px;
   margin-top: 120px;
@@ -177,8 +176,33 @@ textarea{
 .p-3{
   letter-spacing: .2rem;
 }
-
-
+.skills{
+  margin-top: 100px;
+}
+.progress{
+  width: 80%;
+}
+h5{
+  letter-spacing: .2rem;
+  color: white;
+}
+.progress p{
+  letter-spacing: .2rem;
+  color: black;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.badges{
+  margin-top: 30px;
+  margin-bottom: 110px;
+}
+.badges img{
+  width: auto;
+  opacity: 0.5;
+}
+.rank{
+  padding-left: 20px;
+}
 @media only screen and (max-width:751px) {
 .about h2{
   width: auto;
@@ -190,6 +214,7 @@ textarea{
    width: auto;
    margin-right: 80px;
    margin-top: -50px;
+
  }
 }
 @media only screen and (max-width:575px) {
@@ -268,4 +293,9 @@ textarea{
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: invisible; }
+}
+@if $enable-transitions {
+  @keyframes progress-bar-stripes {
+    0% { background-position-x: $progress-height; }
+  }
 }
