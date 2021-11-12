@@ -19,9 +19,7 @@ a.nav-link{
 .items{
   margin-left: 50px;
 }
-.navbar-toggler{
-  margin-left: 300px;
-}
+
 .jumbotron{
   margin-top: 50px;
   margin-bottom: 100px;
@@ -50,9 +48,13 @@ a.nav-link{
   height: 350px;
 }
 .card:hover{
-  opacity: 0.5;
-  border: 2px solid green;
+  opacity: 0.7;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid green;
+  border-top: 2px solid green;
   background-color: black;
+  box-shadow: 2px 2px 2px green;
   color: #fff;
   text-shadow:
     0 0 7px #fff,
@@ -76,21 +78,21 @@ a.nav-link{
   margin-bottom: 40px;
   letter-spacing: .2rem
 }
+
 .about{
   margin-top: 100px;
   margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-
+  height: 100%;
 }
 .about img{
+  float:right;
   height: 600px ;
   width: px;
   margin-left: 70px;
   margin-top: 120px;
   border-radius: 25px;
   border: 1px white solid;
-  vertical-align: middle;
+
 }
 
 .about-title{
@@ -145,6 +147,7 @@ a.nav-link{
   width: 700px;
   background-color: black;
   opacity: 0.8;
+  display: flex;
 }
 .certificates{
   padding: 40px;
@@ -165,19 +168,58 @@ a.nav-link{
 }
 input.form-control{
   border: 2px blue solid;
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px blue;
 }
 textarea{
   border: 1px blue solid;
-  box-shadow:  2px 2px 2px red;
+  box-shadow:  2px 2px 2px blue;
+}
+.p-3{
+  letter-spacing: .2rem;
 }
 
-@media only screen and (max-width: 550px) {
-  .card{
-    margin-left: 80px;
+
+@media only screen and (max-width:751px) {
+.about h2{
+  width: auto;
+}
+.article{
+    width: auto;
+ }
+ .about-image{
+   width: auto;
+   margin-right: 80px;
+   margin-top: -50px;
+ }
+}
+@media only screen and (max-width:575px) {
+.contact-form{
+  width: auto;
+}
+}
+@media only screen and (max-width:1182px) {
+  .card.last-card{
+    margin-left: 160px;
   }
-
 }
+
+@media only screen and (max-width:990px) {
+  .card.last-card{
+    margin-left: 30px;
+  }
+}
+@media only screen and (min-width:400px) and (max-width: 766px) {
+  .card.last-card {
+      margin-left: 80px;
+  }
+}
+@media only screen and (max-width:766px) {
+  .card{
+  width: auto;
+  margin-left: 80px;
+  }
+}
+
 @keyframes flicker {
 
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -197,4 +239,33 @@ textarea{
   20%, 24%, 55% {
       text-shadow: none;
   }
+}
+
+
+
+
+
+
+
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: invisible; }
 }
